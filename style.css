@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  background: #fafafa;
+}
+
+/*  ==================
+    Typography
+=====================  */
+
+h1 {
+  font-family: 'PT Serif', serif;
+  font-weight: 700;
+  font-size: 2.1rem;
+  margin-top: 0;
+}
+
+.subtitle {
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+.text {
+  font-size: 0.9rem;
+}
+
+.name {
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+.position {
+  font-family: 'PT Serif', serif;
+  font-weight: 400;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+}
+
+.footer {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: #a9a9a9;
+}
+
+/* ==================
+    general layout
+===================== */
+
+.container {
+  padding: 4em 1em;
+}
+
+.hero-title {
+  margin-bottom: 1em;
+}
+
+.gallery {
+  margin-top: 3.5em;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-column-gap: 1.5em;
+}
+
+.person {
+  position: relative;
+}
+
+.person-right-mobile {
+  margin-top: 3.5em;
+}
+
+.image {
+  width: 85%;
+}
+
+.name {
+  margin: 0;
+  padding-top: 0.7em;
+}
+
+.position {
+  position: absolute;
+  width: 60%;
+  margin: 0;
+  right: -25%;
+  top: 17%;
+  transform: rotate(90deg);
+}
+
+.footer {
+  margin-top: 6em;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 750px) {
+  body {
+    height: 100vh;
+  }
+
+  h1 {
+    font-size: 2.25rem;
+  }
+  .subtitle,
+  .text {
+    font-size: 1.125rem;
+  }
+
+  .text {
+    font-weight: 400;
+  }
+
+  .name {
+    font-size: 1.125rem;
+    font-weight: 600;
+  }
+
+  .position {
+    font-size: 0.75rem;
+    top: 20%;
+    right: -22%;
+  }
+
+  .container {
+    max-width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  .hero {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hero-title {
+    padding: 0.7em 0;
+  }
+
+  .hero-sub {
+    width: 53%;
+    padding: 0 3em;
+  }
+
+  .gallery {
+    width: 100%;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-column-gap: 3em;
+  }
+
+  .person {
+    margin-bottom: 3em;
+  }
+
+  .person-right-mobile {
+    margin-top: 0;
+  }
+
+  .person-middle-desktop {
+    margin-top: 5em;
+  }
+}
